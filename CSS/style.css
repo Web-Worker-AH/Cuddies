@@ -1,0 +1,140 @@
+html body{
+  max-width:100%;
+  max-height:100%;
+  margin:0;
+  padding: 0;
+
+}
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+
+.header_container{
+  background-color: white;
+  width:100%;
+  height:70px;
+  overflow-x: hidden;
+}
+.navbar-default{
+  background-color: white !important;
+  border-radius: 0;
+  overflow-x: hidden;
+}
+.alert_bar{
+  background-color:#444444 ;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top:-19px;
+  overflow-x: hidden;
+}
+
+#temp_1{
+  background-color: red;
+  height: 70px;
+  width: 50%;
+  overflow-x: hidden;
+}
+
+#temp_2{
+  background-color: orange;
+  height: 70px;
+  width: 50%;
+  overflow-x: hidden;
+}
+
+.div_area{
+  width: 100%;
+  height:600px;
+  position: relative;
+  top: -19px;
+  overflow-x: hidden;
+}
+.left_area{
+  background-color: steelblue;
+  width: 50%;
+  height: 600px;
+  overflow-x: hidden;
+}
+.right_area{
+  background-color: blue;
+  width: 50%;
+  height: 600px;
+  overflow-x: hidden;
+}
+.block_area{
+  width: 100%;
+  height:300px;
+  background-color: pink;
+  position: relative;
+  top:-19px;
+  overflow-x: hidden;
+}
+.first_container{
+  width: 100%;
+  height:500px;
+  background-color: red;
+  overflow-x: hidden;
+  position: relative;
+  top:-19px;
+}
+
+.second_container{
+  width: 100%;
+  height:500px;
+  background-color: pink;
+  overflow-x: hidden;
+  position: relative;
+  top:-19px;
+}
+.third_container{
+  width: 100%;
+  height:500px;
+  background-color: black;
+  overflow-x: hidden;
+  position: relative;
+  top:-19px;
+}
+.fourth_container{
+  width: 100%;
+  height:500px;
+  background-color: red;
+  overflow-x: hidden;
+  position: relative;
+  top:-19px;
+}
+.fifth_container{
+  width: 100%;
+  height:500px;
+  background-color: grey;
+  overflow-x: hidden;
+  position: relative;
+  top:-19px;
+}
+.sixth_container{
+  width: 100%;
+  height:500px;
+  background-color: orange;
+  overflow-x: hidden;
+  position: relative;
+  top:-19px;
+}
+.seventh_container{
+  width: 100%;
+  height:500px;
+  background-color: steelblue;
+  overflow-x: hidden;
+  position: relative;
+  top:-19px;
+}
+
+.footer{
+  width: 100%;
+  height:700px;
+  background-color: skyblue;
+  overflow-x: hidden;
+  position: relative;
+  top:-19px;
+}
