@@ -9,132 +9,262 @@ html body{
   margin: 0;
   padding: 0;
 }
+@font-face{
+  font-family: 'childhead';
+  src:url(../fonts/KBLuckyClover.ttf);
+  font-family: 'childwriting';
+  src:url(../fonts/AckiPreschool.ttf);
+  font-family: 'childwriting_2';
+  src:url(../fonts/Kids Book.ttf);
 
+}
 
-.header_container{
-  background-color: white;
-  width:100%;
-  height:70px;
-  overflow-x: hidden;
+.company{
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  top:5px;
+  left:20px;
 }
 .navbar-default{
-  background-color: white !important;
-  border-radius: 0;
-  overflow-x: hidden;
+  background-color:lightgreen ;
+  overflow: hidden;
+  animation:change 8s infinite;
+  animation-timing-function: ease-out;
+
 }
-.alert_bar{
-  background-color:#444444 ;
-  width: 100%;
-  height: 60px;
+.navbar_handle>li{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
   position: relative;
-  top:-19px;
-  overflow-x: hidden;
+  left: 90px;
+}
+.navbar_handle a{
+
+  font-family: childwriting !important
 }
 
-#temp_1{
-  background-color: red;
-  height: 70px;
-  width: 50%;
-  overflow-x: hidden;
-}
+.navbar_handle a:hover{
 
-#temp_2{
-  background-color: orange;
-  height: 70px;
-  width: 50%;
-  overflow-x: hidden;
+  animation: slide 0.1s 1;
+  animation-timing-function: ease-in;
 }
+@keyframes slide{
+  0%{
+    transform: translate(0px);
+  }
+  50%{
+    transform: translate(10px);
+  }
+  100%{
+    transform: translate(0px);
+  }
 
+
+}
 .div_area{
   width: 100%;
-  height:600px;
-  position: relative;
-  top: -19px;
-  overflow-x: hidden;
-}
-.left_area{
-  background-color: steelblue;
-  width: 50%;
-  height: 600px;
-  overflow-x: hidden;
-}
-.right_area{
-  background-color: blue;
-  width: 50%;
-  height: 600px;
-  overflow-x: hidden;
+  margin: 0;
+  height:auto;
+  overflow: hidden;
+  position:relative;
+  top:52px;
 }
 .block_area{
   width: 100%;
-  height:300px;
-  background-color: pink;
+  height:auto;
+  background-color: #FFA494;
+  overflow: hidden;
   position: relative;
-  top:-19px;
-  overflow-x: hidden;
+  top:-10px;
 }
+
+.block_area_para{
+  text-align:center;
+  font-family:childwriting_2;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@keyframes change{
+  0%{
+    background-color: #FFA494;
+  }
+  20%{
+    background-color: #FFD3E7;
+
+  }
+  40%{
+    background-color: #B1BEE7;
+
+  }
+  60%{
+    background-color: #DFF0FF;
+  }
+  80%{
+    background-color: #FBE26A;
+
+  }
+  100%{
+    background-color: skyblue;
+  }
+}
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
 .first_container{
   width: 100%;
-  height:500px;
-  background-color: red;
+  height:auto;
   overflow-x: hidden;
   position: relative;
-  top:-19px;
+  top:-10px;
 }
 
 .second_container{
   width: 100%;
-  height:500px;
-  background-color: pink;
-  overflow-x: hidden;
+  height:auto;
+  background-color: #D1FF9C;
+  overflow: hidden;
   position: relative;
-  top:-19px;
+  top:-10px;
+  margin: 0;
+  padding: 0;
 }
+#second_container_data>h1{
+  text-align:center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family:childhead;
+  color:rgb(115,171,70);
+}
+#second_container_data>p{
+  text-align:center;
+  font-size: 20px;
+  font-family: childwriting_2;
+  font-weight: bold;
+}
+
 .third_container{
   width: 100%;
   height:500px;
-  background-color: black;
-  overflow-x: hidden;
+  background-color: rgb(255,246,200);
+  overflow: hidden;
   position: relative;
-  top:-19px;
+  top:-10px;
+}
+#third_container_data h1{
+  font-family: childhead;
+  color:rgb(239,193,35);
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+
+}
+#third_container_data p{
+  font-family: childwriting;
+  text-align: center;
+  font-size: 20px;
+
+}
+.heart{
+  animation: pump 1s infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes pump{
+  0%{
+    transform: scale(1,1);
+  }
+    50%{
+
+        transform: scale(1.2,1.2);
+          }
+      100%{
+        transform: scale(1,1);
+
+      }
+}
+#img_collapse td{
+  opacity: 0.4;
+  transition: all 0.5s ease-in-out;
+  padding: 0px;
+  margin: 0px;
+}
+#img_collapse td:hover{
+  opacity: 1;
+  transform: scale(1.1,1.1);
+  overflow: hidden;
 }
 .fourth_container{
+  height:auto;
   width: 100%;
-  height:500px;
-  background-color: red;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
-  top:-19px;
+  top:-10px;
 }
 .fifth_container{
   width: 100%;
-  height:500px;
-  background-color: grey;
+  height:auto;
+  background-color: rgb(255,231,219);
   overflow-x: hidden;
   position: relative;
-  top:-19px;
+  top:-30px;
+}
+#fifth_container_data h1{
+  font-family: childhead;
+  color:rgb(231,11,13);
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+
+}
+#fifth_container_data p{
+  font-family: childwriting_2;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+.quality{
+  animation: rotate 4s infinite;
+  animation-timing-function: ease-out;
+}
+@keyframes rotate{
+  0%{
+    transform: rotateY(0deg);
+    opacity: 0;
+  }
+  50%{
+    transform: rotateY(360deg);
+     opacity:0.5;
+  }
+  100%{
+    transform: rotateY(0deg);
+    opacity: 0.8;
+  }
 }
 .sixth_container{
   width: 100%;
-  height:500px;
-  background-color: orange;
-  overflow-x: hidden;
+  height:auto;
+  overflow: hidden;
   position: relative;
-  top:-19px;
+  top:-40px;
 }
 .seventh_container{
   width: 100%;
   height:500px;
   background-color: steelblue;
-  overflow-x: hidden;
   position: relative;
-  top:-19px;
+  overflow-x: hidden;
 }
 
 .footer{
   width: 100%;
   height:700px;
   background-color: skyblue;
-  overflow-x: hidden;
   position: relative;
-  top:-19px;
+  top:-30px;
+  overflow-x: hidden;
 }
