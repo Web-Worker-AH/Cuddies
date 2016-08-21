@@ -3,6 +3,7 @@ html body{
   max-height:100%;
   margin:0;
   padding: 0;
+  background-color:#D1FF9C;
 
 }
 .container-fluid{
@@ -121,7 +122,7 @@ z-index: 9999;
 .navbar-default{
   height: 70px;
   margin-top: 5px;
-  background-color: white;
+  background-color: #D1FF9C;
   border: none;
   border-bottom: 1px solid grey;
 }
@@ -146,10 +147,8 @@ font-family: 'Original Surfer', cursive;
   left:20px;
 }
 .navbar-inverse{
-  background-color:lightgreen ;
+  background-color:white;
   overflow: hidden;
-  animation:change 8s infinite;
-  animation-timing-function: ease-out;
   border: none;
 }
 .navbar_handle>li{
@@ -161,13 +160,15 @@ font-family: 'Original Surfer', cursive;
 }
 .navbar_handle a{
 
-  font-family: childwriting !important
+  font-family: childwriting !important;
+  color:black !important;
 }
 
 .navbar_handle a:hover{
 
   animation: slide 0.1s 1;
   animation-timing-function: ease-in;
+  color: grey !important;
 }
 @keyframes slide{
   0%{
@@ -206,29 +207,6 @@ font-family: 'Original Surfer', cursive;
   font-weight: bold;
 }
 
-@keyframes change{
-  0%{
-    background-color: #FFA494;
-  }
-  20%{
-    background-color: #FFD3E7;
-
-  }
-  40%{
-    background-color: #B1BEE7;
-
-  }
-  60%{
-    background-color: #DFF0FF;
-  }
-  80%{
-    background-color: #FBE26A;
-
-  }
-  100%{
-    background-color: skyblue;
-  }
-}
 
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -373,64 +351,8 @@ font-family: 'Original Surfer', cursive;
   overflow: hidden;
   position: relative;
   top:-40px;
-  background-color: white;
+  background-color: #FC7A5C;
   color: grey;
-}
-.block_1:hover{
-  animation: skew 1s 1;
-  animation-timing-function: ease-in;
-
-}
-.block_2:hover{
-  animation: skew 1s 1;
-  animation-timing-function: ease-in;
-
-}
-.block_3:hover{
-  animation: skew 1s 1;
-  animation-timing-function: ease-in;
-
-}.block_4:hover{
-  animation: skew 1s 1;
-  animation-timing-function: ease-in;
-
-}
-@keyframes skew{
-0%{
-  transform: scale(1,1);
-}
-50%{
-  transform: scale(1.2,1.2);;
-
-}
-100%{
-  transform: scaleX(1,1);
-
-}
-}
-.block_1{
-  width: 80%;
-  height: auto;
-  background-color:#D1FF9C;
-  border-radius:5%;
-}
-.block_2{
-  width: 80%;
-  height: auto;
-  background-color: #DFF0FF;
-  border-radius:5%;
-}
-.block_3{
-  width: 80%;
-  height: auto;
-  background-color: #FFD3E7;
-  border-radius:5%;
-}
-.block_4{
-  width: 80%;
-  height: auto;
-  border-radius:5%;
-  background-color: #FBE23A;
 }
 .seventh_container{
   width: 100%;
@@ -438,6 +360,8 @@ font-family: 'Original Surfer', cursive;
   background-color:white;
   overflow-x: hidden;
   padding: 80px;
+  position: relative;
+  top:-30px;
 }
 .seventh_container h1{
   text-align: center;
